@@ -1,0 +1,98 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.calculator {
+  background-color: #333;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  width: 320px; /* Set width to mimic a mobile screen */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.input-display {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  font-size: 2.5rem;  /* Larger font size */
+  padding: 10px;
+  width: 100%;
+  text-align: right;
+  margin-bottom: 10px;
+  background-color: #1d1f20;
+  color: white;
+  border: 2px solid #444;
+  border-radius: 10px;
+}
+
+.result p {
+  font-size: 1.8rem;
+  color: white;
+  margin-top: 10px;
+}
+
+.button-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);  /* 4 columns */
+  gap: 15px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+button {
+  font-size: 2rem; /* Larger font size */
+  padding: 20px;
+  background-color: #61dafb;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  color: white;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+  background-color: #21a1f1;
+}
+
+button:active {
+  background-color: #0f75b6;
+}
+
+button:disabled {
+  background-color: #d3d3d3;
+  cursor: not-allowed;
+}
+
+button:focus {
+  outline: none;
+}
+
+.buttons {
+  margin-top: 20px;
+  width: 100%;
+}
+
+button:last-child {
+  grid-column: span 4;  /* Make the "Clear" button span across the entire width */
+}
